@@ -1,0 +1,353 @@
+//// ===========================================================================
+//// Create sound files in Audacity
+//// ===========================================================================
+
+  •  Open Audacity
+  •  Open an existing wav file (perhaps the game background from the after folder)
+  •  Show what a sound file looks like in Audacity
+  •  Show how to play / rewind / select / loop, etc.
+  •  Close the sound file.
+  •  Record a new track "Oh yeah, making games with Yo Yo GameMaker! It Rocks!"
+  •  Use Speed effect to show that it messes with the pitch.  Undo any changes
+  •  Use the Pitch effect to drop the pitch (-4)
+  •  Use the GVerb effect to create a Reverb
+    •  Roomsize:		 150
+    •  Reverb time:		  15
+    •  Damping:			.975
+    •  Input Bandwidth:		   1
+    •  Dry signal level:	   0
+    •  Early Reflection level:	 -23
+    •  Tail Level:		 -23
+  •  Select tail end of processed audio, "Effect" | "Fade Out"
+
+  •  Close the audio file (no need to save it)
+  •  Record a new track of "Up" noises for the construction worker
+  •  Pick the one you like the best and isolate it
+  •  Export as .wav or .mp3
+
+//// ===========================================================================
+//// Create a background sound in Soundation
+//// ===========================================================================
+
+  •  Open Soundation.com
+  •  Login
+  •  "Launch the Studio"
+  •  Review the existing channels
+    •  4 "Audio" channels.  Can load your own .wavs into these, or use library
+    •  1 "Instrument" channel.  Used for Drum Kits, Synths, Piano, Etc. 
+    •  Buttons at the bottom to add new Audio and Instrument channels
+  •  Change the Instrument channel to a Drum Kit
+  •  Create a note clip, position it in the first bar
+  •  Set the looping section to the first bar
+  •  Make sure the loop button is on.
+  •  Create a basic drum beat in the clip editor
+  •  Hit play to hear the beat loop as you build it
+  •  From the menu, select "View" | "Show Master Channel"
+  •  Drag the volume slider on the Master channel down to about 1/4.
+  •  Add another instrument channel
+    •  Set the synth to GM-2 (Beta)
+    •  Show that you can choose the Yamaha Grand Piano
+    •  Audition the piano in the clip editor to hear it
+    •  Change the instrument to "Simple", default preset
+    •  Build a basic melody
+    •  Show that you can extend / copy / paste loops.
+    •  When done, delete the instrument loops and channels
+  •  Show the "Library"
+  •  From the "Library" on the right, expand
+    •  "Electronica" | "125" | "125 BeatMinimine.wav"
+    •  Drag to Audio Channel 1, expand to 8 bars
+    •  Bar 9, "125 BeatKicker.wav" 4 bars
+    •  Bar 13, "125 BeatMinimine.wav" 8 bars
+    •  Bar 21, "125 CongHatClav.wav" 4 bars
+    •  Drag loop section
+  •  Channel 2
+    •  "125 SynthArpeg C.wav" 8 bars
+    •  "125 SyntProg3 C.wav" 4 bars
+    •  "125 SynthArpeg C.wav" 8 bars
+    •  "125 SynthProg4 C.wav" 4 bars
+  •  Channel 3
+    • Bar 9, "Xtra Diverse" | "125 FXTools1.wav" 2 bars
+    • Bar 21, "SoundScape Niedersachsen" | "Alltag-Everyday Life" | "FX_Harke_Rake.wav" 3 bars
+  •  Save Song "File" | "somename"
+  •  "File" | "Export .wav File" | "Save"
+  •  Save the .wav to "Demos\Before\Sounds\Construction Background Music\Construction Background Music.wav"
+  •  Open it in Audacity
+  •  Show that you can Export to .mp3
+  •  Show that you can save as .aup
+
+//// ===========================================================================
+//// Construction Worker Creation
+//// ===========================================================================
+
+  •  Start InkScape
+  •  Draw a ellipse
+    •  Show that it can be elliptical (oval) in shape
+    •  Use the Ctrl key to constrain it to a circle
+    •  Fill it with a skin color (#FFCCAA ish)
+  •  Grab it with the "Select" tool (big arrow)
+    •  Show that you can resize the entire thing (Ctrl to constrain)
+    •  Show that you can rotate/skew the entire thing
+  •  Use the Node tool (small arrow)
+  •  Show that the circle has three control points
+    •  Height, width, slice/arc
+  •  Change object ot Path ("Path" | "Object to Path")
+  •  Grab the node tool again, show that you can deform the shape
+  •  Show that you can add nodes (double click on segment)
+  •  Add a second ellipse
+    •  deform shape it to look like a nose.
+  •  Draw another ellipse for an eye (black)
+    •  Rotate / scale / position properly
+    •  Duplicate / scale / position for second eye
+  •  For each eye:
+    •  duplicate eye, fill white, scale down, overlap at top
+    •  duplicate eye
+    •  select eye and overlapping white
+    •  "Path" | "Intersection" 
+  • Draw a new ellipse for the eyebrow 
+    •  Fill it brown
+    •  "Path" | "Object to Path"
+    •  Distort to look like eyebrow
+    •  Position over eye
+    •  Duplicate / Flip / Scale / Position over other eye
+  •  Distort head ellipse to make a chin
+  •  Make another ellipse for the mouth
+    •  "Path" | "Object to Path"
+    •  Fill White
+    •  Distort / scale / position for mouth
+  •  Duplicate mouth, fill red move down 2-3 times (down arrow key)
+    •  duplicate original mouth
+    •  select duplicated mouth and red mouth
+    •  "Path" | "Intersection"
+  •  Make construction Hat:
+    •  Draw an ellipse for the hat brim
+    •  Rotate / scale / position properly
+    •  Fill yellow (#FFCC00 ish)
+    •  Duplicate to make dome of hat 
+    •  Rotate / scale / position / distort properly
+    •  Group hat dome and brim together 
+    •  show that the group can be manipulated as a unit
+    •  Drag the hat off the head so we can make hair
+  •  Use the Path tool to make some hair
+    •  Use the bezier tool
+    •  Create jaggy shape using straight lines
+    •  Inlude an area for the ear
+    •  Use the node tool
+    •  Select all nodes
+    •  From the toolbar use the "Make selected nodes smooth" tool (second node shaping icon)
+    •  Use eyedropper tool to make hair same color as eyebrows
+  •  Try positioning the hat back over the hair
+    •  Show that it is "behind" the hair
+    •  Use the forward / backwards / move to front / move to back buttons to change z-order.
+  •  At this point, we should have a pretty complete hat
+  •  Add some detail to the hat
+    •  Ungroup the hat
+    •  Use the bezier tool to create a triangle shape
+    •  Use the node tool, click on a segment, not a node, drag to make curve
+    •  curve sides of triangle
+    •  eyedropper to hat color
+    •  Use the "Fill and Stroke" to darken
+    •  Remove the stroke color
+    •  Show how the use the "Fill and Stroke" window
+    •  Once you have the triangle, create two duplicates and position / flip / scale etc. to make three total.
+    •  Regroup hat dome, brim, and triangles
+  •  Use the gradient tool to give the nose a pink tip
+  •  Let's call the head done.  Group the entire head into a single object.
+  •  Create a rectangle for the neck
+    •  No stroke
+    •  Same fill color as face (eyedropper)
+    •  Darken fill so it is a little "tanner" than the face
+    •  There's your neck!
+  •  Create another rectangle for the body
+    •  Fill it with an olive green color
+    •  Grab the node tool
+    •  Notice that the top right node is a circle
+    •  drag it to create a rounded corner
+    •  Notice there is another circle for the other edge
+    •  You can drag the circles individually or 
+       Use the Ctrl key to drag both the same
+    •  Convert it to a path "Path" | "Object to path"
+    •  Start to deform it into an upper torso
+    •  Give our construction worker a beer gut and a big butt!
+  •  Ok, so, we get the idea.  To create a character:
+    •  Use primitive shapes like circles, ellipses, rectangles
+    •  Distort / scale / rototate to look the way you want
+    •  Boolean operations (Intersection, Union, etc.) are a great way to make complex shapes    
+    •  When necessary, use the bezier tool to creat your own shapes
+    •  Multiple shapes can be "grouped together"
+    •  You can position shapes "infront" or "behind" other shapes
+
+//// ===========================================================================
+//// Use my Character Template
+//// ===========================================================================
+
+  •  I've created a template file for InkScape
+    •  Use it to kick-start your character development
+    •  Includes all the primivtive shapes for the major body parts
+    •  Includes a "wireframe" layer to show original shapes
+  •  Open "Demos\Assets\Templates\Character Template.svg"
+  •  Once you open it, save it: "Demos\Before\Construction Worker\Character\Construction Worker.svg"
+  •  Review the contents of the file
+    •  Open the layers window ("Layer" | "Layers...")
+    •  Show the four layers
+      •  Character: Unlocked. Contains shapes for you to modify
+      •  Wireframe: Locked. Contains original shapes, opacity at 25%
+      •  Bounding Box: Locked. Contains 512x512 transparent box.
+                       This gives you a convenient shape to select for export
+      •  Notes:     Unlocked: Contains instructions
+  • Show that you can lock/unlock layers 
+  • Show that you can hide/show layers
+  • Show that you can re-order, etc. layers.
+  
+
+//// ===========================================================================
+//// Bring the head into the template
+//// ===========================================================================
+
+
+  •  Copy the head group (not neck & torso) we created earlier
+  •  In the new file, make sure the "Character" layer is selected
+  •  Delete the existing circle for the head (you should see the transparent one from the wireframe still)
+  •  Paste in the head from the original file
+  •  Scale / Rotate / Position properly
+  •  Select the Neck, color it "tanner" like we did earlier
+  •  Select the Torso, color it olive green, shape it 
+    •  Beer gut
+    •  Big butt
+  •  Make a collar
+    •  Rectangle, Object to path
+    •  Rotate / scale / distort
+    •  Same olive fill as Torso, darken
+  •  Color Sleve same as collar
+    •  Select the arm group.  
+    •  Double click to enter group
+    •  Select Upper Arm / Sleve group
+    •  Double click to enter group
+    •  Select sleve
+    •  Use eyedropper to make same as collar
+    •  Color arm segments same as neck.
+    •  Select Hand Manipulate nodes to look like a glove
+    •  Color it a darker yellow than the hat.
+  •  Select Back Arm
+    •  Delete
+    •  Confirm center of rotation on sleve
+    •  Duplicate Front Arm
+    •  Rotate the duplicate up some (over wireframe of old back arm)
+    •  Flip hand over (so the thumb is right)
+    •  Clean it up
+    •  Send it to the back of the layer
+  •  Create the top of the pants (waist down)
+    •  Create a rectangle / Object to path
+    •  Cover the bottom part of the torso
+    •  Curve top down to look like a waist line
+    •  Select Torso, then the new deformed rectangle 
+    •  Select torso duplicate and rectangle, 
+    •  Duplicate the new bottom
+    •  Select the Torse, Select the new bottom "Path" | "Division"
+    •  The torso should be divided into two parts
+    •  Fill the bottom "denim blue"
+  •  Create a belt
+    •  Draw a rectangle for the belt, Object to path
+    •  Distort, skew, curve, etc. to make a belt
+    •  Color a beige yellow between hat and gloves
+    •  Create a gray / rounded rectangle for the buckle
+  •  Color the legs
+    •  Bring the Front leg to the Front
+    •  Delete the Shorts pant leg
+    •  Color Leg Segents same as 
+    •  Color shoe same as glove
+    •  Modify shoe path to look like work boot
+    •  Create shapes for shoe top and bottom
+    •  Create shapes for shoe eyelets
+  •  Delete Back Leg
+  •  Select Front Leg , ensure center of rotation
+  •  Duplicate front leg
+  •  Rotate and position duplicate over wireframe of back leg
+  •  Send duplicate leg to back
+  •  Rotate both front and back legs to straight
+  •  Raise lower both to ensure they are in the 512x512 frame
+     and at the same height
+
+//// ===========================================================================
+//// Time permitting, add details...
+//// ===========================================================================
+
+  •  Create a pocket on the toolbelt.
+    •  Create a rounded rectangle, Object to path
+    •  Small same brown as hair
+    •  Position, etc. appropriately
+    •  Duplicate rectangle to make pocket front, fill same belt
+    •  Deform pocket front to show brown "hole" behind it. 
+  •  Create a hammer loop
+    •  Create a small rectangle along the belt, Object to Path
+    •  Fill same brown as hair
+    •  Position approprately
+    •  Duplicate
+    •  Fill duplicate same as belt
+    •  Distort duplicate to show brown behind, make loop
+  •  Make a hammer
+    •  Create a rectangle for the hammer handle, Object to path
+    •  Fill same brown as hair, lighten slighly.  Just pick a wood color you like!
+    •  Use the node tool, drag side and bottom segments to make curves
+    •  Create a rectangle for the hammer head, fill dark gray
+    •  Object to Path
+    •  Create small circles for "dips" around hammer head
+    •  Delete the from the head ("Path" | "Difference")    
+    •  Add / modify nodes on the back edge to create the claw
+    •  Select hammer head and handle, group togeter
+    •  Move behind front of loop in belt.
+    •  Drag / position, rotate to look like it's hanging in the loop.
+  •  Make a tape measure
+    •  Create a square with rounded corners
+    •  Same yellow as helmet
+    •  Duplicate, move duplicate up/left a few times, Fill black
+    •  Duplicate original square
+    •  Select black square, duplicate yellow square "Path" | "Difference"
+    •  Place a black circle over center of yellow square
+    •  Add a yellow rectangle along the bottom, sticking out to the right for the "tape"
+    •  Create a small gray rectangle and the end of the tape for the tip
+    •  Group them all together
+    •  Move them over the pocket on the belt
+    •  Move behind the front of the pocket
+    •  Position / rotate / scale to look right!
+
+//// ===========================================================================
+//// Group the torso (not the arms) together
+//// ===========================================================================
+
+  •  Select all the torso items, excluding the arms and legs
+    •  Neck
+    •  Collar
+    •  Upper Torso
+    •  Belt
+    •  Belt Buckle
+    •  Pocket (front, tape measure, back)
+    •  Belt loop (front, hammer, back)
+    •  Butt
+  •  Group them all together. 
+  •  Adjust z-orders appropriately!
+  •  W00t!  You've got a pretty awesome, fully articulated worker!  
+  •  SAVE! SAVE! SAVE! SAVE! SAVE!
+
+//// ===========================================================================
+//// Create the walking animation
+//// ===========================================================================
+
+  •  Open "Demos\Assets\Templates\Character Walking Template.svg"
+  •  Save as "Demos\Before\Construction Worker\Walking\Construction Worker Walking.svg"
+  •  Show the contents of the templates (layers, wireframes, etc)
+  •  Copy the character (and bounding box) from the character file
+  •  Paste it into the walking template
+  •  Position it at (X,Y)=(0,0). This should put it perfectly into the first frame
+  •  Position the legs and arms to match the wireframe
+    •  You can hide the character layer to see the wireframe if needed
+  •  When happy, first make sure you aren't in a group by picking a couple of different group items in succession.
+  •  Copy the frame (and bounding box)
+  •  Paste it back in, but position it's X at 512 (0+512)
+  •  Repeat the above process, pasting each subsequent frame at previous X + 512.
+  •  Select all 8 frames
+  •  Ensure height selected area is 4098x512.
+    •  If the height is greater than 512 move the low hanging feet in offending frames up into the frame
+  •  Export the entire strip as a single bitmap
+    •  "Demos\Before\Construction Worker\Walking\ConstructionWorkerWalking48_Strip.png"
+  •  Open the exported file up in gimp to show its contents
+
